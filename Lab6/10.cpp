@@ -32,7 +32,7 @@ public:
 };
 int main()
 {
-    Vehicle vehicle1("AB12CD3456", "John Doe", "Active");
+    Vehicle vehicle1("AB12CD3456", "Mahfujar Rahman", "Active");
     Vehicle vehicle2 = vehicle1;
     vehicle2.modifyInsuranceDetails("Inactive");
     vehicle1.displayRecord();
