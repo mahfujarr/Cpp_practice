@@ -15,12 +15,12 @@ public:
         cout << real << " + " << imag << "i" << endl;
     }
 
-    Complex operator+(const Complex &other)
+    Complex operator+(Complex &other)
     {
         return Complex(real + other.real, imag + other.imag);
     }
 
-    Complex operator-(const Complex &other)
+    Complex operator-(Complex &other)
     {
         return Complex(real - other.real, imag - other.imag);
     }

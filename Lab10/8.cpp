@@ -1,23 +1,18 @@
 #include <iostream>
 using namespace std;
-
 class Player
 {
 private:
     string name;
     int points;
-
 public:
     Player(string n, int p) : name(n), points(p) {}
-
     int getPoints() const { return points; }
-
     Player operator+(const Player &other)
     {
         return Player(name + " & " + other.name, points + other.points);
     }
 };
-
 int main()
 {
     Player player1("Alice", 100);

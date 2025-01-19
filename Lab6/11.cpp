@@ -11,15 +11,13 @@ public:
         isOpen = true;
         cout << "The file " << fileName << " is opened!" << endl;
     };
-    ~FileManager();
+    ~FileManager()
+    {
+        isOpen = false;
+        cout << "The file " << fileName << " is closed!" << endl;
+    };
 };
-FileManager::~FileManager()
-{
-    isOpen = false;
-    cout << "The file " << fileName << " is closed!" << endl;
-}
 int main()
 {
-    FileManager file1("Joy");
-    // file1.~FileManager();
+    FileManager file1("Joy.cpp");
 }

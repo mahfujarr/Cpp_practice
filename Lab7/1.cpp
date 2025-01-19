@@ -22,9 +22,7 @@ public:
 int main()
 {
     Student s1("Mahfujar Rahman", 23303151);
-
     cout << "Name: " << s1.name << endl;
     cout << "Student ID: " << s1.studentID << endl;
-
     return 0;
 }
